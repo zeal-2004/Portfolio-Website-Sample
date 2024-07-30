@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Website-Sample/static/css/main.85a74a35.css",
+    "main.js": "/Portfolio-Website-Sample/static/js/main.48111927.js",
+    "static/media/bg.png": "/Portfolio-Website-Sample/static/media/bg.5b731bf00a688c8ed8ad.png",
+    "static/media/bg2.png": "/Portfolio-Website-Sample/static/media/bg2.06fb52a36cfddc6969a0.png",
+    "static/media/hire.png": "/Portfolio-Website-Sample/static/media/hire.5fc145c5e893c11d5153.png",
+    "static/media/woman.png": "/Portfolio-Website-Sample/static/media/woman.cb6f0c3b2be9d6b21761.png",
+    "static/media/portimage.png": "/Portfolio-Website-Sample/static/media/portimage.851a66582dde5fa9697d.png",
+    "static/media/mob1.png": "/Portfolio-Website-Sample/static/media/mob1.db3db115052ec372f423.png",
+    "static/media/mob3.png": "/Portfolio-Website-Sample/static/media/mob3.4ac72b6c6d9378529ec2.png",
+    "static/media/ring2.png": "/Portfolio-Website-Sample/static/media/ring2.9b522e41e8e69aaf489b.png",
+    "static/media/card1.png": "/Portfolio-Website-Sample/static/media/card1.b42ffb0d4983a1c1706c.png",
+    "static/media/LufgaLight.ttf": "/Portfolio-Website-Sample/static/media/LufgaLight.6ef28164cd0173eb2011.ttf",
+    "static/media/LufgaMedium.ttf": "/Portfolio-Website-Sample/static/media/LufgaMedium.8a6e8c322b3081e46655.ttf",
+    "static/media/card2.png": "/Portfolio-Website-Sample/static/media/card2.89f5aaf7623a3d1e19ee.png",
+    "static/media/ring1.png": "/Portfolio-Website-Sample/static/media/ring1.4bef14f1799b22c37638.png",
+    "static/media/mob2.png": "/Portfolio-Website-Sample/static/media/mob2.8a7cc0f2c2617ec4b7a9.png",
+    "index.html": "/Portfolio-Website-Sample/index.html",
+    "main.85a74a35.css.map": "/Portfolio-Website-Sample/static/css/main.85a74a35.css.map",
+    "main.48111927.js.map": "/Portfolio-Website-Sample/static/js/main.48111927.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85a74a35.css",
+    "static/js/main.48111927.js"
+  ]
+}
