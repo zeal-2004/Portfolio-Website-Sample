@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+@font-face { 
+  font-family: Lufga; 
+  src: url('./font/LufgaLight.ttf'); 
+} 
+
+@font-face { 
+  font-family: Lufga-logo; 
+  src: url('./font/LufgaMedium.ttf'); 
+} 
+
+.nav-link.active {
+  background-color: #FD853A !important;
+  font-family: Lufga-logo !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link:hover {
+  background-color: #424242 !important;
+  font-family: Lufga-logo !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-custom {
+  background-color: #171717 !important;
+  font-family: Lufga !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link {
+  color: white !important;
+}
+
+.nav-home {
+  background-color: #FD853A !important;
+  font-family: Lufga-logo !important;
+}
+
+.glass-panel {
+  background-color: rgba(255,255,255,0.06)!important;
+  border: 1px solid rgba(255,255,255,0.4)!important;
+  backdrop-filter: blur(10px)!important;
+}
+
+.services {
+  background-image: url("./images/bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.btn-outline-dark:hover {
+   color: white!important;
+   background-color: #151515!important;
+}
+
+.btn-woman:hover {
+  background-color: #FD853A!important;
+  color: white!important;
+  border: 1px solid rgba(255,255,255,0.4)!important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #FD853A!important;
+  color: white!important;
+}
+
+.btn-woman:hover::after {
+  content: " ↗";
+}
+
+.contain {
+  position: relative;
+}
+
+.testimonials {
+  background-image: url("./images/bg2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  border-radius: 50px;
+}
+
+.test-card:hover {
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.btn-card:hover {
+  background-color: #FD853A !important;
+}
+
+input::placeholder {
+  color: black!important;
+  font-family: Lufga!important;
+}
+
+.text-wrapper {
+  overflow: hidden;
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  transform: rotate(-1.5deg);
+}
+
+.tape {
+  animation: move-rtl 6000ms linear infinite;
+  white-space: nowrap;
+  font-family: Lufga;
+  color: black;
+  font-size: 40px;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
   color: white;
+  padding: 0px 0px 0px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  width: 623px;
 }
 
-.App-link {
-  color: #61dafb;
+.contain:hover .overlay {
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contain:hover .port-text {
+  opacity: 0;
+}
+
+.contain:hover .btn-outline-primary {
+  background-color: #FD853A!important;
+  color: white!important;
+}
+
+.box-class, .woman-ring {
+  z-index: 0;
+}
+
+.overlay-woman {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  left: 10px;
+}
+
+.overlay-ring {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  z-index: -1;
+  left: -100px;
+}
+
+.woman-ring:hover .overlay-ring {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: transform 300ms;
+}
+
+.box-class:hover .overlay-woman {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: transform 300ms;
+}
+
+.woman-ring .overlay-ring {
+  opacity: 1;
+  transform: scale(0.1);
+  transition: transform 300ms;
+}
+
+.box-class:hover .hire-woman {
+  transform: translateY(0.1rem);
+  transition: transform 400ms;
+}
+
+.box-class .hire-woman{
+  transform: translateY(-0.5rem);
+  transition: transform 400ms;
+}
+
+.box-class .overlay-woman {
+  opacity: 1;
+  transform: scale(0.5);
+  transition: transform 300ms;
+}
+
+.whole-section:hover .box-left{
+  transform: translateY(-15rem);
+  transition: transform 300ms;
+}
+
+.whole-section:hover .box-right{
+  transform: translateY(-15rem);
+  transition: transform 300ms;
+}
+
+.whole-section .box-left {
+  transform: translateY(5rem);
+  transition: transform 300ms;
+}
+
+.whole-section .box-right {
+  transform: translateY(5rem);
+  transition: transform 300ms;
+}
+
+.whole:hover .intro-head {
+  transform: translateY(30rem);
+  transition: transform 500ms;
+}
+
+.whole .intro-head {
+  transform: translateY(1rem);
+  transition: transform 300ms;
 }
